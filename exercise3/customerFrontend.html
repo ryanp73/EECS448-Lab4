@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Rubik's Cube Store</title>
+</head>
+<body>
+    <div id="container">
+        <h1 id="header">Ryan's Rubik's Cube Store</h1>
+        <div id="message"></div>
+        <form action="customerBackend.php" method="post" onsubmit="validate()" id="storeForm">
+            <div id="store">
+                <div class="item">
+                    <h2>Classic White Rubik's Cube</h2>
+                    <img src="cube1.jpg" alt="">
+                    <p>Price: $15.00</p>
+                    Quantity: <input type="number" name="cube1" value="0" min="0">
+                </div>
+                <div class="item">
+                    <h2>American Rubik's Cube</h2>
+                    <img src="cube2.jpg" alt="">
+                    <p>Price: $17.76</p>
+                    Quantity: <input type="number" name="cube2" value="0" min="0">
+                </div>
+                <div class="item">
+                    <h2>Extra Large 8x8 Rubik's Cube</h2>
+                    <img src="cube3.jpg" alt="">
+                    <p>Price: $100.00</p>
+                    Quantity: <input type="number" name="cube3" value="0" min="0">
+                </div>
+                <div class="item large-item">
+                    <h2>Login</h2>
+                    <div>
+                        <label for="username">Username:</label>
+                        <input type="email" name="username" id="username" required>
+                    </div>
+                    <div>
+                        <label for="username">Password:</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    
+                    <h2>Shipping Options:</h2>
+                    <div id="shipping">
+                        <div>    
+                            <input type="radio" name="shipping" id="free" checked>
+                            <label for="free">Free 7 Day Shipping</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="shipping" id="rush">
+                            <label for="rush">$5.00 3 Day Shipping</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="shipping" id="overnight">
+                            <label for="overnight">$50.00 Overnight Shipping</label><br>
+                        </div>
+                        <input type="reset" value="Cancel Your Order">
+                        <input type="submit" value="Place Your Order">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="formChecker.js"></script>
+</body>
+</html>
