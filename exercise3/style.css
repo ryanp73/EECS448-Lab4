@@ -1,20 +1,26 @@
 *, *::after, *::before {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  border: 0;
-  margin: 0;
-  padding: 0;
-  font-family: 'Open Sans';
-  overflow-x: hidden;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+    overflow-x: hidden;
 }
 
 #container {
-  background-color: #ccc;
-  color: #333;
-  padding: 10vh 10vw;
-  width: 100vw;
+  	background-color: #ccc;
+  	color: #333;
+  	padding: 10vh 10vw;
+ 	width: 100vw;
+	min-height: 100vh;
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	flex-wrap: wrap;
+	align-items: center;
 }
 
 #store {
@@ -50,7 +56,7 @@ img {
     margin-bottom: 5vh;
 }
 
-h2 {
+h1, h2 {
     text-align: center;
 }
 

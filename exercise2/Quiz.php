@@ -21,8 +21,6 @@ $response3 = $_POST["q3"];
 $response4 = $_POST["q4"];
 $response5 = $_POST["q5"];
 
-print_r($_POST);
-
 $score = 0;
 
 if ($answer1 == $response1)

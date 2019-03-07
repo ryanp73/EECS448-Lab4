@@ -31,7 +31,7 @@ $shippingCost = intval($shipping);
 <body>
     <div id="container">
         <h1 class="header">Purchase Complete</h1>
-        <h2>Welcome <?php echo $username; ?> with password <?php echo $password; ?></h2>
+        <h2>Welcome <?php echo $username; ?> with password <?php echo $password; ?>!</h2>
 
         <h2>Your Receipt:</h2>
         <div class="item">
