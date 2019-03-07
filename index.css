@@ -1,0 +1,68 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Open Sans';
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  font-size: 10vh;
+}
+
+h2 {
+  font-size: 5vh;
+}
+
+p {
+  font-size: 2.5vh;
+}
+
+#landing {
+  /* https://pixabay.com/photos/conifers-dark-fir-trees-fog-foggy-1836582/ */
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  width: 100vw;
+  height: 100vh;
+
+  max-width: 100vw;
+  max-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#heading {
+  font-size: 20vh; 
+  color: #eee;
+}
+
+#heading:hover {
+  font-size: 25vh;
+}
+   
+li {
+  list-style: none;
+  padding-top: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 3.5vh;
+}
+
+a:hover {
+  text-decoration: underline;
+}
