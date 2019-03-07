@@ -1,4 +1,6 @@
 function validate(event) {
+    // This is all able to be done by html attributes, but here is some checking just in case
+    
     event.preventDefault();
     
     let message = document.getElementById("message");
@@ -15,7 +17,7 @@ function validate(event) {
     }
 
     // It's not actually possible to catch all email's with regex, but this will do for now.
-    let re = /[a-zA-Z0-9\.]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+\./;
+    let re = /[a-zA-Z0-9\.]+@[a-zA-Z0-9\.]+/;
 
     if (!re.test(username)) {
         message.innerText = "Username is empty.";

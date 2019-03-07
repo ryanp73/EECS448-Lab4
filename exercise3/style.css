@@ -87,3 +87,7 @@ input[type=reset]:active {
 .large-item {
     width: 75vw;
 }
+
+table {
+    border: 0;
+}
